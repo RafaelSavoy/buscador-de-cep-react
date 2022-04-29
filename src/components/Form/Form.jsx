@@ -4,7 +4,7 @@ import cepManager from './cepManager';
 import { CepNumber, FormDiv, StyledForm, SubmitButton, Title } from './styles';
 
 const Form = () => {
-	const [cepNumber, setCepNumber] = useState(0)
+	const [cepNumber, setCepNumber] = useState('')
 	const { cep, setCep } = useContext(CepContext)
 
 	function isValidCepNumber(num) {
