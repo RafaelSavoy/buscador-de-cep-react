@@ -15,6 +15,9 @@ const GlobalStyles = createGlobalStyle`
 	html{
 		font-size: 62.5%;	
 	}
+	body{
+		overflow-x: hidden;
+	}
 	@media only screen and (max-width: 600px) {
 		html {
 			font-size: 50%;
