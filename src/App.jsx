@@ -11,7 +11,7 @@ const Main = styled(motion.main)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 120px);
 `
 
 const animation = {
