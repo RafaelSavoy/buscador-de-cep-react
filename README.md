@@ -19,3 +19,4 @@ Insira o CEP no campo de texto e aperte o botão "Pesquisar endereço"
 - Axios
 - Framer-Motion
 - React Input Mask
+- Styled Components
