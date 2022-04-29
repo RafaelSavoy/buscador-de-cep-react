@@ -1,3 +1,4 @@
+import InputMask from 'react-input-mask'
 import styled from 'styled-components'
 
 const FormDiv = styled.div`
@@ -20,7 +21,7 @@ const StyledForm = styled.form`
 	border-radius: 8px;
 	margin: 10px;
 `
-const CepNumber = styled.input`
+const CepNumber = styled(InputMask)`
 	border: 1px solid ${props => props.error ? 'red' : 'blue'};
 	border-radius: 5px;
 	color: black;
