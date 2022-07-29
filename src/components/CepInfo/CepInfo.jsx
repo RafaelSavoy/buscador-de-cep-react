@@ -4,13 +4,14 @@ import { CepData, CepForm, CepInfoDiv } from './styles';
 
 const Cep = () => {
 	const { cep } = useContext(CepContext)
+	const cepDatas = ['Rua','Bairro','Cidade','Estado'];
 	return (
 		<CepInfoDiv>
 			<CepForm>
-				<CepData type='text' name='rua' placeholder='Rua' value={cep.rua} />
-				<CepData type='text' name='bairro' placeholder='Bairro' value={cep.bairro} />
-				<CepData type='text' name='cidade' placeholder='Cidade' value={cep.cidade} />
-				<CepData type='text' name='estado' placeholder='Estado' value={cep.estado} />
+				{cepDatas.map(cepData => {
+				 	const lowerCaseCepData = cepData.toLowerCase()
+					<CepData type='text' name={lowerCaseCepData} placeholder={cepData} value={lowerCaseCepData} />
+				})}
 			</CepForm>
 		</CepInfoDiv>
 	);
