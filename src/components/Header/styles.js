@@ -5,7 +5,7 @@ const StyledHeader = styled.header`
 	justify-content: center;
 	padding: 10px;
 
-	span{
+	p{
 		font-size: 1.5rem;
 	}
 `

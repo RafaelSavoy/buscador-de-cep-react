@@ -4,7 +4,7 @@ import { StyledHeader } from './styles';
 const Header = () => {
 	return (
 		<StyledHeader>
-			<span>Made with ❤️ by <a href='https://github.com/RafaelSavoy' target='_blank'>Rafael Savoy</a></span>
+			<p>Made with ❤️ by <a href='https://github.com/RafaelSavoy' target='_blank'>Rafael Savoy</a></p>
 		</StyledHeader>
 	);
 };

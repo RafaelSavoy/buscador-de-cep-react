@@ -14,13 +14,13 @@ const Form = () => {
 		return isNumber(num) && isValidNumberLenght(num)
 	}
 
-	const formatCep = cep => cep.replace(/[^0-9]/g,'')
+	const formatCep = cep => cep.replace(/[^0-9]/g, '')
 
 	const handleChange = e => {
 		setCepNumber(formatCep(e.target.value))
 	}
 
-	const handleCepError = e => setCep({error: true})
+	const handleCepError = e => setCep({ error: true })
 
 	function updateCep(cepInfo) {
 		setCep({
@@ -51,7 +51,7 @@ const Form = () => {
 		<FormDiv>
 			<StyledForm onSubmit={handleSubmit}>
 				<Title>Insira o CEP</Title>
-				<CepNumber type='text' name='cep' onChange={handleChange} error={cep.error} mask='99999-999' value={cepNumber}/>
+				<CepNumber type='text' name='cep' onChange={handleChange} error={cep.error} mask='99999-999' value={cepNumber} />
 				<SubmitButton value='Pesquisar endereço' />
 			</StyledForm>
 		</FormDiv>
